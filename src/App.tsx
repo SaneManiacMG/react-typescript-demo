@@ -1,5 +1,6 @@
 import './App.css';
 import { Status } from './components/Status';
+import { Heading } from './components/Heading';
 
 function App() {
   // const personName = {
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <Status status="loading" />
+      <Heading>Placeholder</Heading>
     </div>
   );
 }
