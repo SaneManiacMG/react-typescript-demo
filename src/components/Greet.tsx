@@ -2,7 +2,7 @@ import React from 'react';
 
 type GreetingProps = {
     name: string;
-    messageCount: number;
+    messageCount?: number;
     isLoggedIn: boolean;
 }
 
