@@ -1,6 +1,5 @@
 import './App.css';
-import { Status } from './components/Status';
-import { Heading } from './components/Heading';
+import { Button } from './components/Button';
 
 function App() {
   // const personName = {
@@ -26,8 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Status status="loading" />
-      <Heading>Placeholder</Heading>
+      <Button handleClick={(event, id) => console.log("Button cliked: ", event, id)} />
     </div>
   );
 }
