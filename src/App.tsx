@@ -1,6 +1,6 @@
 import './App.css';
-import { Private } from './components/auth/Private';
-import Profile from './components/auth/Profile';
+import RandomNumber from './components/restriction/RandomNumber';
+
 
 function App() {
   // const personName = {
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
