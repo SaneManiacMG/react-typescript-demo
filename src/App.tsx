@@ -1,5 +1,6 @@
 import './App.css';
-import Counter from './components/class/Counter';
+import { Private } from './components/auth/Private';
+import Profile from './components/auth/Profile';
 
 function App() {
   // const personName = {
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <Counter message='The count value is ' />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
